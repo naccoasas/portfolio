@@ -1,0 +1,50 @@
+@use "variables"as v;
+
+/*===============
+共通設定
+=================*/
+body {
+    background-color: v.$whiteColor;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    color: v.$fontColor;
+    // font-family: 'BIZ UDMincho', serif;
+  }
+  
+  a {
+    color: v.$titleColor;
+    text-decoration: none;
+    &:hover {
+      color: v.$mainColor;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  
+  .wrapper {
+    // max-width: 1200px;
+    margin: 0 auto;
+    background-color: v.$baseColor;
+  }
+  
+
+  /*----------------
+  window img固定
+  ------------------*/
+article {
+  width: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+}
+
+.a02 {
+  background-image: url(../images/misen.png);
+  min-height: 15rem;
+}
+
+

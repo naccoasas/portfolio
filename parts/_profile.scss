@@ -1,0 +1,60 @@
+@use "variables" as v;
+
+/*===============
+profile
+=================*/
+.episode_box {
+  width: 100%;
+  padding: 10%;
+  background-color: #4c665b;
+  color: #f3f3f3;
+  @include v.pc{
+    display: flex;
+  }
+}
+
+.episode{
+  padding-bottom: 1rem;
+  text-align: left;
+  @include v.pc{
+    padding-left: 3rem;
+    text-align: left;
+  }
+}
+
+.readling_img {
+  margin: 2rem auto 1rem auto;
+  width: 60%;
+  transform: rotate(-2deg);
+  @include v.pc{
+    width: 30%;
+  }
+}
+
+.tape {
+  width: 50%;
+  height: 35px;
+  margin: -20px auto;
+  background: #35391b;
+  transform: rotate(-3deg);
+  opacity: .5;
+}
+
+.episode_carrer {
+  width: 100%;
+}
+
+.career {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: right;
+}
+
+.license {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sp_aboutimgbox {
+  padding-bottom: 6.25rem;
+}

@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+/*------------------------
+ title[profile][works] 
+ --------------------------*/
+ .sec__title {
+    padding: 3.125rem;
+    background-color: #fff;
+  }
+  
+  h1 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*------------------------
+   title[skill][hoby][licence][character]
+   title[marketing&design][design&other][design&coding] 
+   --------------------------*/
+  h2 {
+    font-size: 3rem;
+    color: #707070;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    // font-family: "Courgette", cursive;
+    font-family: v.$titleFont;
+    font-weight: normal;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  
+  h4 {
+    line-height: 1.5;
+  }
+  
+  p {
+    line-height: 2;
+  }
+  

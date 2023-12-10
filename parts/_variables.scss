@@ -1,0 +1,63 @@
+/*===============
+変数
+=================*/
+$whiteColor: #fafafa;
+$baseColor: #f6f5f1;
+$mainColor: #4c665b;
+$fontColor: #1b2e39;
+$titleColor:#707070;
+$accentColor: #35391b;
+
+$titleFont:'Caveat Brush', cursive;
+$titleFont2:'Fleur De Leah', cursive;
+$titleFont3: 'Special Elite', cursive;
+
+$sectionFont:'Zen Kaku Gothic New', sans-serif;
+
+// $duration: .7s;
+// $easing: cubic-bezier(.25, 0, .1, 1);
+
+
+/*===============
+px→rem変換
+=================*/
+@function rem($px, $base: 16) {
+  @return $px / $base * 1rem;
+}
+
+/*===============
+buttonStyle(@mixin→@include buttonStyle)
+=================*/
+// @mixin buttonStyle($bgc: $maincolor) {
+//   color: #fff;
+//   background: $bgc;
+//   text-decoration: none;
+//   font-size: rem(20);
+//   display: inline-block;
+//   padding: .3em 1em;
+//   border: none;
+//   border-radius: rem(10);
+
+//   &:hover {
+//     opacity: 0.5;
+//   }
+// }
+
+/*===============
+mediaquery
+=================*/
+// $tb: 450px;
+
+// @mixin tb {
+//   @media(min-width: ($tb)) {
+//     @content;
+//   }
+// }
+
+$pc: 768px;
+
+@mixin pc {
+  @media(min-width: ($pc)) {
+    @content;
+  }
+}

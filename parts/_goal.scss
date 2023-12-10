@@ -1,0 +1,28 @@
+@use "variables" as v;
+
+/*=================
+  goal
+  ==================== */
+  .goal__box h2 {
+    margin-bottom: 0;
+  }
+  
+  .goal_tex h4 {
+    background-color: #1b2e39;
+    border-radius: 0.5rem;
+    max-width: 30%;
+    margin: 3rem auto 2rem auto;
+    font-size: 1.2rem;
+    color: #f6f5f1;
+  }
+  
+  .goal_tex {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: .3rem;
+    padding-bottom: 3rem;
+    color: #1b2e39;
+  }
+  .goal_tex p{
+    text-align: left;
+  }

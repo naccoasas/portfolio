@@ -1,0 +1,372 @@
+@use "variables" as v;
+
+/*===============
+header(hero 画像)
+=================*/
+#pgtop {
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+
+.hero {
+  background-size: cover;
+  background-position: 42% -70px;
+  background-image: url(../images/hero_edited.png);
+   min-height: 100vh;
+  position: relative;
+}
+
+.HANAlogo {
+  width: 10%;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.webtitle {
+  width: 70%;
+  margin: 0 auto 0 1rem;
+  @include v.pc{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 40%;
+  }
+}
+
+
+
+/*-----------------------------------
+  feather_block
+  -----------------------------------*/
+#feather_block {
+  width: 40%;
+}
+
+#feather_block .feather_parts_box {
+  position: relative;
+}
+
+#feather_block .feather_parts_box img {
+  position: absolute;
+}
+
+#feather_block .feather_parts_box img:nth-child(2n+1) {
+  width: 20%;   /*羽根のサイズ*/
+  @include v.pc{
+    width: 15%;
+  }
+}
+
+#feather_block .feather_parts_box img:nth-child(2n) {
+  width: 30%;
+  /*羽根のサイズ*/
+  @include v.pc{
+    width: 20%;
+  }
+}
+
+/*-----------------------------------
+  羽根パーツの表示位置
+  -----------------------------------*/
+img.parts_01 {
+  top: 0;
+  left: 5%;
+}
+
+img.parts_02 {
+  top: 0;
+  left: 10%;
+}
+
+img.parts_03 {
+  top: 0;
+  left: 12%;
+}
+
+img.parts_04 {
+  top: 0;
+  left: 22%;
+}
+
+img.parts_05 {
+  top: 0;
+  left: 25%;
+}
+
+img.parts_06 {
+  top: 0;
+  left: 28%;
+}
+
+img.parts_07 {
+  top: 0;
+  left: 35%;
+}
+
+img.parts_08 {
+  top: 0;
+  left: 40%;
+}
+
+img.parts_09 {
+  top: 0;
+  left: 43%;
+}
+
+img.parts_10 {
+  top: 0;
+  left: 50%;
+}
+
+img.parts_11 {
+  top: 0;
+  left: 55%;
+}
+
+img.parts_12 {
+  top: 0;
+  left: 60%;
+}
+
+img.parts_13 {
+  top: 0;
+  left: 63%;
+}
+
+img.parts_14 {
+  top: 0;
+  left: 70%;
+}
+
+img.parts_15 {
+  top: 0;
+  left: 75%;
+}
+
+img.parts_16 {
+  top: 0;
+  left: 81%;
+}
+
+img.parts_17 {
+  top: 0;
+  left: 85%;
+}
+
+img.parts_18 {
+  top: 0;
+  left: 90%;
+}
+
+img.parts_19 {
+  top: 0;
+  left: 93%;
+}
+
+img.parts_20 {
+  top: 0;
+  left: 98%;
+}
+
+/*-----------------------------------c
+  舞い散るアニメーション
+  -----------------------------------*/
+@keyframes feather {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate(3px, 10vh) rotate(20deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(0, 20vh) rotate(50deg);
+  }
+
+  50% {
+    transform: translate(-20px, 40vh) rotate(150deg);
+  }
+
+  70% {
+    transform: translate(-40px, 60vh) rotate(-50deg);
+  }
+
+  90% {
+    transform: translate(-60px, 80vh) rotate(-180deg);
+    opacity: .8;
+  }
+
+  100% {
+    transform: translate(-70px, 100vh);
+    opacity: 0;
+  }
+}
+
+.feather_parts_box img {
+  -webkit-animation: feather linear 3s infinite;
+  animation: feather linear 8s infinite;
+  /*アニメーションが始まるまで画像を見えなくしておく*/
+  opacity: 0;
+}
+
+/*-----------------------------------
+  アニメーションが始まるまでの時間
+  -----------------------------------*/
+img.parts_01,
+img.parts_12 {
+  -webkit-animation-delay: 0s;
+  animation-delay: -2s;
+}
+
+img.parts_02,
+img.parts_13 {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+img.parts_03,
+img.parts_14 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+img.parts_04,
+img.parts_10,
+img.parts_15 {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+img.parts_05,
+img.parts_16 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+img.parts_06,
+img.parts_17 {
+  -webkit-animation-delay: 6s;
+  animation-delay: -1s;
+}
+
+img.parts_07,
+img.parts_11,
+img.parts_18 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+img.parts_08,
+img.parts_19 {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+img.parts_09,
+img.parts_20 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/*===============
+  nav
+  =================*/
+// nav全体
+.nav_box {
+  width: 65%;
+  margin-left: 32%;
+  margin-right: 3%;
+  background-color: rgba(255, 255, 255, 0.2)  ;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -5%;
+  // margin-left: auto;
+  // margin-right: auto;
+  @include v.pc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+}
+//nav　profileのグループ
+.profile__box {
+  margin-bottom: 1.5rem;
+  @include v.pc{
+    margin-bottom: 0;
+  }
+}
+//nav　worksのグループ
+.works__box {
+  @include v.pc{
+    margin-bottom: 0;
+  }
+}
+
+.nav_item {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; //左右の中央 
+  @include v.pc{
+   align-items: flex-end; //上下の下揃え
+  }
+}
+.prof,
+.work {
+  width:30%;
+  padding-left: 0.5rem;
+  border-width: 0 0 5px 10px;
+  border-style: solid;
+  border-color: v.$mainColor;
+  margin-left: 5%;
+  margin-right: 10%;
+  transform: rotate(-10deg);
+  &:hover {
+    padding-left: 0.7em;
+    padding-right: 0.3em;
+  }
+  @include v.pc{
+    width: 50%;
+  }
+}
+
+// .work{
+//   @include v.pc{
+//     transform: rotate(-5deg);
+//   }
+// }
+
+//navサブタイトル
+.nav_title {
+  width: 50%;
+}
+.nav_title a {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: v.$titleColor;
+  transform: rotate(-10deg);
+  font-family: v.$titleFont;
+  &:hover {
+    padding-left: 0.7em;
+    padding-right: 0.3em;
+  }
+  @include v.pc{
+    font-size: 2rem;
+  }
+}
+
+// .works__box a{
+//   @include v.pc{
+//     transform: rotate(-5deg);
+//   }
+// }
+
+//nav
+.line,
+.line2 {
+  display: none;
+}

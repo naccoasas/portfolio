@@ -1,0 +1,87 @@
+@use "variables" as v;
+
+/* ------------------
+  hobby
+  ----------------------*/
+  .title__hobby{
+    margin-bottom: 0;
+  }
+  
+  .hobby{
+    background-color: v.$baseColor;
+    padding-top: 1rem;
+  }
+
+  .hobby__box {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    @include v.pc{
+      display: flex;
+    }
+  }
+  
+  .piano {
+    width: 40%;
+    margin: 10% auto 5% 0;
+    /* transform:rotate(-2deg); */
+    position: relative;
+    z-index: 2;
+    @include v.pc{
+      width: 25%;
+      margin-top: 3%;
+      margin-right: 5%;
+      margin-left: 7%;
+    }
+  }
+  
+  .piano::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: v.$mainColor;
+    z-index: -1;
+  }
+  
+  .flute {
+    width: 70%;
+    margin: 5% 0 10% auto;
+    /* transform:rotate(2deg); */
+    position: relative;
+    z-index: 2;
+    @include v.pc{
+      width: 40%;
+      margin: 5% auto 0 2rem;
+      // margin-left: 5%;
+      // margin-top: 3%;
+  }
+  }
+  
+  .flute::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: v.$mainColor;
+    z-index: -1;
+    @include v.pc{
+      bottom: 25%;
+      height: 70%;
+  }
+  }
+  
+  .hobby__coment{ //文章
+    @include v.pc{
+      width: 70%;
+      padding: 1rem;
+      text-align: left;
+  }
+}
+.hobby__coment p{
+  text-align: left;
+}

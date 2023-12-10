@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+/* ------------------
+license
+----------------------*/
+.license{
+  background-image: url(../images/green_leftbotom.png);
+  background-color: v.$mainColor;
+  background-blend-mode: hard-light;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+ .license__item{
+   width: 80%;
+   margin: 0 auto;
+   color: v.$whiteColor;
+ }
+
+
+
+
+/* ------------------
+skill
+----------------------*/
+.title_skill {
+  margin-bottom: 0;
+}
+
+.skill_box {
+  background-image: url(../images/wood_img.png);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.skills {
+  width: 80%;
+  display: grid;
+  text-align: center;
+  margin: 2rem auto 2rem auto;
+  // gap: 1;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  @include v.pc{
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+  }
+
+}
+
+figcaption {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.5rem;
+}
+
+/* .skills img {
+    max-width:20%;
+  } */

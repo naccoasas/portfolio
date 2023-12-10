@@ -1,0 +1,62 @@
+@use "variables"as v;
+
+/* ==================
+  access
+  ======================*/
+  .access {
+    background-image: url(../images/end_edited.png);
+    /* background-position: center; */
+    background-size: cover;
+    height: 350px;
+    position: relative;
+  }
+
+  .access p{ //文章
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40%;
+    font-size: 1.3rem;
+    @include v.pc{
+      padding-top: 8%;
+  }
+  }
+
+
+
+/* ===============================================
+page_top　topに戻るボタン
+================================================*/
+
+.page__top {
+  position: fixed;
+  bottom: 10px;
+  left:5%;
+  z-index: 100;
+  width: 45px;
+  @include v.pc{
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+    z-index: 100;
+    width: 45px;
+}
+
+  // transform: translate(-25px);
+}
+
+
+/*===============
+  footer
+  =================*/
+  #pgfoot {
+    background-color: #4c665b;
+    min-width: 100vw;
+    color: #f6f5f1;
+  }
+  
+  small {
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
